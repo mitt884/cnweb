@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cửa hàng Sách ABC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -24,24 +24,32 @@
             <p>Chào mừng bạn đến với Cửa hàng Sách ABC – nơi mang đến những cuốn sách hay và ý nghĩa cho mọi lứa tuổi!</p>
         </section>
 
-        <section id="product-list">
-            <article class="product-item">
-                <h3>1. Dế Mèn Phiêu Lưu Ký</h3>
-                <p>Một tác phẩm kinh điển dành cho thiếu nhi.</p>
+        <section class="product-tools">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+            <button id="searchBtn">Tìm</button>
+            <button id="addProductBtn">+ Thêm sản phẩm</button>
+        </section>
+
+        <form id="addProductForm" class="hidden">
+            <input type="text" id="newProductName" placeholder="Tên sản phẩm..." required>
+            <button type="submit">Thêm</button>
+        </form>
+
+        <section class="product-list">
+            <div class="product-item">
+                <span class="product-name">Dế Mèn Phiêu Lưu Ký</span>
                 <p class="price">55.000đ</p>
-            </article>
+            </div>
 
-            <article class="product-item">
-                <h3>2. Nhà Giả Kim</h3>
-                <p>Câu chuyện truyền cảm hứng về hành trình theo đuổi ước mơ.</p>
+            <div class="product-item">
+                <span class="product-name">Nhà Giả Kim</span>
                 <p class="price">80.000đ</p>
-            </article>
+            </div>
 
-            <article class="product-item">
-                <h3>3. Đắc Nhân Tâm</h3>
-                <p>Cuốn sách kỹ năng sống bán chạy nhất mọi thời đại.</p>
+            <div class="product-item">
+                <span class="product-name">Đắc Nhân Tâm</span>
                 <p class="price">90.000đ</p>
-            </article>
+            </div>
         </section>
 
         <section>
@@ -67,8 +75,11 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>© 2025 Cửa hàng Sách ABC - Địa chỉ: 123 Đường Văn Học, Hà Nội</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
