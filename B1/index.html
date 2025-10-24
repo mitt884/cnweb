@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Sách ABC</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Cửa hàng Sách ABC</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Nội dung chính -->
+    <main>
+        <!-- Giới thiệu cửa hàng -->
+        <section>
+            <h2>Giới thiệu</h2>
+            <p>Chào mừng bạn đến với Cửa hàng Sách ABC – nơi mang đến những cuốn sách hay và ý nghĩa cho mọi lứa tuổi!</p>
+        </section>
+
+        <!-- Danh sách sản phẩm -->
+        <section id="product-list">
+            <article class="product-item">
+                <h3>1. Dế Mèn Phiêu Lưu Ký</h3>
+                <p>Một tác phẩm kinh điển dành cho thiếu nhi.</p>
+                <p class="price">55.000đ</p>
+            </article>
+
+            <article class="product-item">
+                <h3>2. Nhà Giả Kim</h3>
+                <p>Câu chuyện truyền cảm hứng về hành trình theo đuổi ước mơ.</p>
+                <p class="price">80.000đ</p>
+            </article>
+
+            <article class="product-item">
+                <h3>3. Đắc Nhân Tâm</h3>
+                <p>Cuốn sách kỹ năng sống bán chạy nhất mọi thời đại.</p>
+                <p class="price">90.000đ</p>
+            </article>
+        </section>
+
+        <!-- Form liên hệ -->
+        <section>
+            <h2>Liên hệ với chúng tôi</h2>
+            <form>
+                <div>
+                    <label for="name">Họ tên:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div><br>
+
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div><br>
+
+                <div>
+                    <label for="message">Nội dung:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div><br>
+
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Cửa hàng Sách ABC - Địa chỉ: 123 Đường Văn Học, Hà Nội</p>
+    </footer>
+</body>
+</html>
